@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:roll_dice_app/gradient_container.dart';
+import 'package:roll_dice_app/text_widget.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
-        body: GradientContainer(),
+        body: GradientContainer(
+          widget: const TextWidget(),
+        ),
       ),
     ),
   );
